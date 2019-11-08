@@ -15,3 +15,20 @@
   outline: 0;
   border: none;
 }
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.form-control {
+  box-shadow: none !important;
+  padding: 14px 16px;
+  border: none;
+  background-color: #f2f6fd;
+  color: #25292c;
+}
+
+.form-control:focus {
+  background-color: #f2f6fd;
+}

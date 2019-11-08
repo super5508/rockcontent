@@ -1,19 +1,67 @@
+.logo {
+  height: 39px;
+}
+
 .signup-wrapper {
   display: flex;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.signup-form-wrapper {
+  min-width: 683px;
+  background-color: #ffffff;
+  padding: 134px 130px 32px;
 }
 
 .signup-form {
-  min-width: 683px;
-  background-color: #ffffff;
-  padding: 134px 130px;
+  margin: 120px 0 70px;
+}
+
+.signup-form .btn-primary {
+  font-size: 10px;
+  padding: 12px 8px;
+  letter-spacing: 1.25px;
+}
+
+.signup-form .btn-link {
+  color: #6b5ac1;
+  font-size: 14px;
+  padding: 6px 0px;
+  font-weight: 500;
+}
+
+.signup-form .form-control {
+  font-weight: 500;
+}
+
+.signup-form-wrapper
+.progress,
+.progress-bar {
+  height: 8px;
+}
+
+.signup-form-wrapper
+.progress {
+  margin-bottom: 20px;
+}
+
+.signup-form-wrapper
+.form-description {
+  color: #434445;
+  font-weight: 500;
+}
+
+.signup-form-wrapper
+.form-step {
+  margin-bottom: 122px;
 }
 
 .signup-banner {
   flex: auto;
   position: relative;
   background-color: #6b5ac1;
-  padding: 250px 96px 32px 96px;
+  padding: 250px 96px 32px;
 }
 
 .signup-banner .left-corner {
@@ -24,4 +72,65 @@
   width: 387px;
   height: 175px;
   border-radius: 0 0 100px 0;
+}
+
+.banner-title {
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.banner-card {
+  padding: 85px 32px 24px;
+}
+
+.banner-card-wrapper {
+  position: relative;
+}
+
+.banner-card-wrapper
+.pattern-top-right {
+  position: absolute;
+  top: -60px;
+  right: -24px;
+}
+
+.banner-quote {
+  font-weight: 700;
+  font-size: 21px;
+  color: #212223;
+  padding: 0 40px 0 20px;
+  margin-bottom: 40px;
+}
+
+.feedback-avatar-wrapper {
+  position: relative;
+  width: fit-content;
+}
+
+.feedback-avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 32px;
+  object-fit: cover;
+}
+
+.feedback-avatar-status {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 100%;
+  border: 2px solid white;
+  background-color: #4bd179;
+}
+
+.feedback-name {
+  color: #434445;
+  font-weight: 500;
+}
+
+.feedback-position {
+  color: #85878b;
+  font-size: 14px;
 }
