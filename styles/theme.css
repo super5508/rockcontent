@@ -111,6 +111,13 @@
   right: -24px;
 }
 
+.banner-card-wrapper
+.pattern-bottom-left {
+  position: absolute;
+  bottom: -14px;
+  left: -18px;
+}
+
 .banner-quote {
   font-weight: 700;
   font-size: 21px;
