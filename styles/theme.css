@@ -1,0 +1,27 @@
+.signup-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.signup-form {
+  min-width: 683px;
+  background-color: #ffffff;
+  padding: 134px 130px;
+}
+
+.signup-banner {
+  flex: auto;
+  position: relative;
+  background-color: #6b5ac1;
+  padding: 250px 96px 32px 96px;
+}
+
+.signup-banner .left-corner {
+  position: absolute;
+  background-color: #7765D2;
+  top: 0;
+  left: 0;
+  width: 387px;
+  height: 175px;
+  border-radius: 0 0 100px 0;
+}
