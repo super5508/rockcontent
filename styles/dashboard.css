@@ -14,7 +14,6 @@
 }
 
 .page-inner-content {
-  height: 100vh;
   background-color:#F8F8FE;
   border-top-left-radius: 20px;
   padding: 58px;
@@ -126,11 +125,52 @@
 }
 
 .table-radius {
-  border-radius: 16px;
   border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 16px;
+  margin-bottom: 32px;
 }
 
-.table-radius th, tr {
-  border-top: none !important;
-  border-bottom: none !important;
+.table th {
+  font-size: 18px;
+  line-height: 21px;
+  border-top-width: 0;
+  border-bottom-width: 0 !important;
+  padding: 28px 20px;
+}
+
+.table td {
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+.text-success {
+  color: #3FC46D !important;
+}
+
+.page-item {
+  margin: 0 8px;
+}
+
+.page-link {
+  border: none !important;
+}
+
+.page-item .page-link {
+  color: #000;
+}
+
+.page-item.active .page-link {
+  border: none;
+  background-color: #826DEB !important;
+  border-radius: 8px;
+}
+
+.page-link {
+  box-shadow: none !important;
+}
+
+.page-link:hover {
+  background-color: white !important;
+  border: none !important;
 }
