@@ -174,3 +174,63 @@
   background-color: white !important;
   border: none !important;
 }
+
+.rc-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin-bottom: 32px;
+}
+
+.rc-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.rc-card-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rc-card-hero {
+  font-size: 56px;
+  font-weight: 700;
+  color: #000;
+}
+
+.rc-card-content {
+  font-size: 14px;
+  color: #5f6064;;
+}
+
+.evenly {
+  justify-content: space-evenly;
+}
+
+.rc-card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 0 2px 0 rgba(214,226,240,0.5);
+}
+
+.rc-purple-alpha {
+  background-color: #826DEB19;
+}
+
+.rc-warning-alpha {
+  background-color: #ffb92e19;
+}
+
+.rc-danger-alpha {
+  background-color: #ff337419;
+}
+
+.rc-primary-alpha {
+  background-color: #2d8eff19;
+}
