@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bg-danger {
@@ -48,4 +49,21 @@
 
 .text-normal {
   font-size: 14px;
+}
+
+.hero-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  margin-bottom: 32px;
+  color: #434445;
+}
+
+.step-progress {
+  margin-bottom: 72px;
+  height: 8px;
 }
