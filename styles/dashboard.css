@@ -5,18 +5,25 @@
   left: 0;
   height: 100vh;
   background-color: #826DEB;
+  transition: width 0.2s ease-in;
 }
 
 .page-content {
   margin-left: 68px;
   min-height: 100vh;
   background-color: #826DEB;
+  transition: margin 0.2s ease-in;
+}
+
+.page-content.expanded {
+  margin-left: 164px;
 }
 
 .page-inner-content {
   background-color:#F8F8FE;
   border-top-left-radius: 20px;
   padding: 58px;
+  min-height: 100vh;
 }
 
 .page-inner-content-wrapper {
@@ -24,7 +31,25 @@
   overflow-y: auto;
 }
 
-.action {
+.main-actions .action {
+  color: #AFA2F2;
+  font-size: 14px;
+  position: relative;
+  margin: 0 8px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 17.5px;
+}
+
+.main-actions .action img {
+  width: 24px;
+}
+
+.sub-actions .action {
   position: relative;
   margin: 0 8px;
   height: 35px;
@@ -32,14 +57,24 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding: 6px 14px;
+  width: 52px;
+}
+
+.main-actions .action span {
+  margin-left: 12px;
+  visibility: hidden;
+  transition: visible .2s ease-in;
 }
 
 .logo1 {
   margin-top: 38px;
+  cursor: pointer;
 }
 
 .action.active {
-  background-image: url('../assets/imgs/Menu/active icon.png');
+  background-color: #584AA1;
+  color: white;
 }
 
 .main-actions .action:not(:first-child) {
@@ -51,11 +86,16 @@
 }
 
 .main-actions {
-  margin-bottom: 150px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .sub-actions {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .rc-badge {
@@ -168,10 +208,11 @@
 
 .page-link {
   box-shadow: none !important;
+  background-color: #F8F8FE !important;
 }
 
 .page-link:hover {
-  background-color: white !important;
+  background-color: #F8F8FE !important;
   border: none !important;
 }
 
@@ -233,4 +274,12 @@
 
 .rc-primary-alpha {
   background-color: #2d8eff19;
+}
+
+.sidebar.expanded {
+  width: 164px;
+}
+
+.sidebar.expanded .main-actions .action span {
+  visibility: visible;
 }
