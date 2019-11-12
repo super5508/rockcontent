@@ -45,11 +45,6 @@
   border-radius: 17.5px;
 }
 
-.main-actions .action img {
-  width: 24px;
-  object-fit: scale-down;
-}
-
 .sub-actions .action {
   position: relative;
   margin: 0 8px;
@@ -64,8 +59,8 @@
 
 .main-actions .action span {
   margin-left: 12px;
-  visibility: hidden;
-  transition: visible .2s ease-in;
+  opacity: 0;
+  transition: opacity .2s ease-in;
 }
 
 .logo1 {
@@ -282,5 +277,17 @@
 }
 
 .sidebar.expanded .main-actions .action span {
-  visibility: visible;
+  opacity: 1;
+}
+
+.main-actions .action div {
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.main-actions .action span {
+  flex: 1;
+  text-align: left;
 }
