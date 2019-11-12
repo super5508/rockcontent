@@ -4,14 +4,14 @@
   top: 0;
   left: 0;
   height: 100vh;
-  background-color: #826DEB;
+  background-color: #6b5ac1;
   transition: width 0.2s ease-in;
 }
 
 .page-content {
   margin-left: 68px;
   min-height: 100vh;
-  background-color: #826DEB;
+  background-color: #584AA1;
   transition: margin 0.2s ease-in;
 }
 
@@ -47,6 +47,7 @@
 
 .main-actions .action img {
   width: 24px;
+  object-fit: scale-down;
 }
 
 .sub-actions .action {
