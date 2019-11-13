@@ -11,7 +11,7 @@
 .page-content {
   margin-left: 68px;
   min-height: 100vh;
-  background-color: #584AA1;
+  background-color: #6b5ac1;
   transition: margin 0.2s ease-in;
 }
 
@@ -290,4 +290,39 @@
 .main-actions .action span {
   flex: 1;
   text-align: left;
+}
+
+.form-control-action {
+  flex: 1;
+  position: relative;
+}
+
+.search-engine {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  border-radius: 24px;
+  background-color: #F2F6Fd;
+  font-size: 12px;
+  padding: 3px 4px;
+}
+
+.search-engine span {
+  cursor: pointer;
+  padding: 6px;
+  color: #23252b;
+  width: 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+.search-engine .active {
+  background-color: #fff;
+  border-radius: 24px;
+  color: #000;
+  font-weight: 600;
+}
+
+.search-engine span:first-child {
+  margin-right: 6px;
 }
